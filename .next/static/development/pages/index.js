@@ -115,7 +115,7 @@ var FontFaceObserver = __webpack_require__(/*! fontfaceobserver */ "./node_modul
 var Fonts = function Fonts() {
   var link = document.createElement("link");
   link.href = "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,700,900";
-  link.ref = "stylesheet";
+  link.rel = "stylesheet";
   document.head.appendChild(link);
   var josefinSans = new FontFaceObserver("Josefin Sans");
   josefinSans.load().then(function () {

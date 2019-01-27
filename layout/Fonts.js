@@ -4,7 +4,7 @@ const Fonts = () => {
   const link = document.createElement("link");
   link.href =
     "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,700,900";
-  link.ref = "stylesheet";
+  link.rel = "stylesheet";
 
   document.head.appendChild(link);
 
