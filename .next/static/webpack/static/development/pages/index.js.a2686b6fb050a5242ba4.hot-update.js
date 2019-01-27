@@ -1,19 +1,24 @@
 webpackHotUpdate("static/development/pages/index.js",{
 
-/***/ "./components/NavBar.js":
+/***/ "./layout/MainLayout.js":
 /*!******************************!*\
-  !*** ./components/NavBar.js ***!
+  !*** ./layout/MainLayout.js ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MainLayout; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-var _jsxFileName = "/Users/manx/projects/blog-sample/components/NavBar.js";
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavBar */ "./components/NavBar.js");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Fonts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Fonts */ "./layout/Fonts.js");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../index.css */ "./index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "/Users/manx/projects/blog-sample/layout/MainLayout.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -36,65 +41,56 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var NavBar =
+
+
+var layoutStyle = {
+  margin: 20,
+  padding: 20
+};
+
+var MainLayout =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(NavBar, _React$Component);
+  _inherits(MainLayout, _React$Component);
 
-  function NavBar(props) {
-    _classCallCheck(this, NavBar);
+  function MainLayout(props) {
+    _classCallCheck(this, MainLayout);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(NavBar).call(this, props));
+    return _possibleConstructorReturn(this, _getPrototypeOf(MainLayout).call(this, props));
   }
 
-  _createClass(NavBar, [{
+  _createClass(MainLayout, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      Object(_Fonts__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: layoutStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 23
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
-        pills: true,
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 24
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 25
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        href: "/",
-        active: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        href: "/about",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }, "About"))));
+      }, this.props.children));
     }
   }]);
 
-  return NavBar;
+  return MainLayout;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
@@ -102,4 +98,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.af5c406f02a80c13466d.hot-update.js.map
+//# sourceMappingURL=index.js.a2686b6fb050a5242ba4.hot-update.js.map
